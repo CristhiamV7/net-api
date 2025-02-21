@@ -112,5 +112,5 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build -
 ---
 
 ## 🙌 Contributors
-- **Your Name** - Cristhiam Valle
+- **Cristhiam Valle**
 
