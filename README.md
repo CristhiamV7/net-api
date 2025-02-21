@@ -24,16 +24,6 @@ git clone https://github.com/CristhiamV7/net-api.git
 cd WebApiCarBrands
 ```
 
-### 2️⃣ Configure environment variables:
-Create a `.env` file in the project root and add:
-```sh
-POSTGRES_USER=your_username
-POSTGRES_PASSWORD=your_password
-POSTGRES_DB=carbrands_db
-DB_HOST=database
-DB_PORT=5432
-```
-
 ### 3️⃣ Build and run with Docker:
 ```sh
 docker-compose up --build
