@@ -26,9 +26,9 @@ cd WebApiCarBrands
 ### 2️⃣ Configure environment variables:
 Create a `.env` file in the project root and add:
 ```sh
-POSTGRES_USER=your_username
-POSTGRES_PASSWORD=your_password
-POSTGRES_DB=carbrands_db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=mysecretpassword
+POSTGRES_DB=CarBrandsDB
 DB_HOST=db
 DB_PORT=5432
 ```
