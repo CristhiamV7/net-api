@@ -20,7 +20,7 @@ WebApiCarBrands is a .NET 9 API designed using **Clean Architecture** and **Doma
 
 ### 1️⃣ Clone the repository:
 ```sh
-git clone https://github.com/your-username/WebApiCarBrands.git
+git clone https://github.com/CristhiamV7/net-api.git
 cd WebApiCarBrands
 ```
 
