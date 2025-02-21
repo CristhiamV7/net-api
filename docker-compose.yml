@@ -10,15 +10,14 @@ services:
       - db
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
-      - ConnectionStrings__DefaultConnection=Host=db;Database=CarBrandsDB;Username=postgres;Password=mysecretpassword
+      - ConnectionStrings__DefaultConnection=Host=${DB_HOST};Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}
+
 
   db:
     image: postgres:17.3
     restart: always
-    environment:
-      POSTGRES_DB: CarBrandsDB
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mysecretpassword
+    env_file:
+      - .env
     ports:
       - "5433:5432"
     volumes:

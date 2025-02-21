@@ -1,4 +1,3 @@
-
 # 🚗 WebApiCarBrands
 
 WebApiCarBrands is a .NET 9 API designed using **Clean Architecture** and **Domain-Driven Design (DDD)**. It provides CRUD operations for managing car brands, using **PostgreSQL** as the database and **Docker Compose** for containerized deployment.
@@ -24,10 +23,36 @@ git clone https://github.com/CristhiamV7/net-api.git
 cd WebApiCarBrands
 ```
 
-### 3️⃣ Build and run with Docker:
+### 2️⃣ Configure environment variables:
+Create a `.env` file in the project root and add:
+```sh
+POSTGRES_USER=your_username
+POSTGRES_PASSWORD=your_password
+POSTGRES_DB=carbrands_db
+DB_HOST=db
+DB_PORT=5432
+```
+
+### 3️⃣ Set the connection string in `appsettings.json`:
+Ensure the connection string in `appsettings.json` matches the values set in the `.env` file:
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Host=db;Port=5432;Database=carbrands_db;Username=your_username;Password=your_password"
+}
+```
+> **Note:** Replace `your_username` and `your_password` with the credentials from the `.env` file.
+
+### 4️⃣ Build and run with Docker:
 ```sh
 docker-compose up --build
 ```
+
+### 5️⃣ Apply Migrations
+Before running the application, apply the Entity Framework Core migrations in Package Manager console:
+```sh
+Update-Database
+```
+This ensures the database schema is correctly set up.
 
 The API will be available at:  
 👉 `http://localhost:8080`
@@ -88,3 +113,4 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build -
 
 ## 🙌 Contributors
 - **Your Name** - Cristhiam Valle
+
