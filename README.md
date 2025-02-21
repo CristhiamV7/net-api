@@ -52,6 +52,10 @@ Before running the application, apply the Entity Framework Core migrations in Pa
 ```sh
 Update-Database
 ```
+Or use cmd
+```sh
+dotnet ef database update
+```
 This ensures the database schema is correctly set up.
 
 The API will be available at:  
