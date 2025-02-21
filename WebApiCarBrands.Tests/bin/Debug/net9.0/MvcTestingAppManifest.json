@@ -1,0 +1,5 @@
+{
+  "WebApiCarBrands.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\ASSA\\Test\\Backend\\Clean-Arquitecture\\New\\WebApiCarBrands\\WebApiCarBrands.Application",
+  "WebApiCarBrands.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\ASSA\\Test\\Backend\\Clean-Arquitecture\\New\\WebApiCarBrands\\WebApiCarBrands.Domain",
+  "WebApiCarBrands.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\ASSA\\Test\\Backend\\Clean-Arquitecture\\New\\WebApiCarBrands\\WebApiCarBrands.Infrastructure"
+}

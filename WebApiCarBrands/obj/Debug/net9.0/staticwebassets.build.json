@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "d71tTgshuWdMMd3wQYKiBdoRFHbiNPbLvNDSoW2zq/I=",
+  "Source": "WebApiCarBrands",
+  "BasePath": "_content/WebApiCarBrands",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

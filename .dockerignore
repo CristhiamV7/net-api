@@ -1,0 +1,43 @@
+# Ignore .NET build artifacts
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.vs
+.vscode/
+.idea/
+
+# Ignore dependency folders
+node_modules/
+packages/
+
+# Ignore logs and temp files
+*.log
+*.swp
+*.pid
+tmp/
+temp/
+
+# Ignore Docker build files
+docker-compose.override.yml
+Dockerfile.debug
+
+# Ignore environment secrets
+.env
+secrets.json
+
+# Ignore Git-related files
+.git/
+.gitignore
+
+# Ignore compiled files
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Ignore IDE settings
+*.csproj.user
+*.csproj.vspscc

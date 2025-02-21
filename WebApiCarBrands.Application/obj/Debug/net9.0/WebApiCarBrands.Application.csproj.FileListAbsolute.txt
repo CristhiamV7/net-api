@@ -1,0 +1,15 @@
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\bin\Debug\net9.0\WebApiCarBrands.Application.deps.json
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\bin\Debug\net9.0\WebApiCarBrands.Application.dll
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\bin\Debug\net9.0\WebApiCarBrands.Application.pdb
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\bin\Debug\net9.0\WebApiCarBrands.Domain.dll
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\bin\Debug\net9.0\WebApiCarBrands.Domain.pdb
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCarBrands.Application.csproj.AssemblyReference.cache
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCarBrands.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCarBrands.Application.AssemblyInfoInputs.cache
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCarBrands.Application.AssemblyInfo.cs
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCarBrands.Application.csproj.CoreCompileInputs.cache
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCa.6AF4C8C9.Up2Date
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCarBrands.Application.dll
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\refint\WebApiCarBrands.Application.dll
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\WebApiCarBrands.Application.pdb
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Application\obj\Debug\net9.0\ref\WebApiCarBrands.Application.dll

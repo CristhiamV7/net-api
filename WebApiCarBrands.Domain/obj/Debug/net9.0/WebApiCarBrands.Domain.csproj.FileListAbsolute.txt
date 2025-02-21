@@ -1,0 +1,11 @@
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\bin\Debug\net9.0\WebApiCarBrands.Domain.deps.json
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\bin\Debug\net9.0\WebApiCarBrands.Domain.dll
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\bin\Debug\net9.0\WebApiCarBrands.Domain.pdb
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\WebApiCarBrands.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\WebApiCarBrands.Domain.AssemblyInfoInputs.cache
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\WebApiCarBrands.Domain.AssemblyInfo.cs
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\WebApiCarBrands.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\WebApiCarBrands.Domain.dll
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\refint\WebApiCarBrands.Domain.dll
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\WebApiCarBrands.Domain.pdb
+D:\Projects\ASSA\Test\Backend\Clean-Arquitecture\New\WebApiCarBrands\WebApiCarBrands.Domain\obj\Debug\net9.0\ref\WebApiCarBrands.Domain.dll
