@@ -16,6 +16,7 @@ builder.Services.AddDbContext<CarBrandDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<ICarBrandRepository, CarBrandRepository>();
+builder.Services.AddScoped<ICarBrandService, CarBrandService>();
 builder.Services.AddScoped<CarBrandService>();
 
 builder.Services.AddControllers();

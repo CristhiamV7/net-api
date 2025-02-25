@@ -3,7 +3,7 @@ using WebApiCarBrands.Domain.Entities;
 
 namespace WebApiCarBrands.Application.Services
 {
-    public class CarBrandService
+    public class CarBrandService : ICarBrandService
     {
         private readonly ICarBrandRepository _repository;
 

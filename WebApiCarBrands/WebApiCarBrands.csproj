@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -19,7 +19,6 @@
     <ProjectReference Include="..\WebApiCarBrands.Application\WebApiCarBrands.Application.csproj" />
     <ProjectReference Include="..\WebApiCarBrands.Domain\WebApiCarBrands.Domain.csproj" />
     <ProjectReference Include="..\WebApiCarBrands.Infrastructure\WebApiCarBrands.Infrastructure.csproj" />
-    <ProjectReference Include="..\WebApiCarBrands.Tests\WebApiCarBrands.Tests.csproj" />
   </ItemGroup>
 
 </Project>

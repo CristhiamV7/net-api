@@ -53,4 +53,5 @@ dkms.conf
 
 .env
 .vs
-.bin/
+bin/
+obj/

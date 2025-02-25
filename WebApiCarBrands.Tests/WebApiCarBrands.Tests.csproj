@@ -21,10 +21,15 @@
     <ProjectReference Include="..\WebApiCarBrands.Application\WebApiCarBrands.Application.csproj" />
     <ProjectReference Include="..\WebApiCarBrands.Domain\WebApiCarBrands.Domain.csproj" />
     <ProjectReference Include="..\WebApiCarBrands.Infrastructure\WebApiCarBrands.Infrastructure.csproj" />
+	  <ProjectReference Include="..\WebApiCarBrands\WebApiCarBrands.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TestResults\" />
   </ItemGroup>
 
 </Project>

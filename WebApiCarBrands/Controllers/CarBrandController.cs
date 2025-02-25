@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApiCarBrands.Application.Services;
+using WebApiCarBrands.Application.Interfaces;
 using WebApiCarBrands.Domain.Entities;
 
 namespace WebApiCarBrands.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CarBrandController(CarBrandService service) : ControllerBase
+    public class CarBrandController(ICarBrandService service) : ControllerBase
     {
-        private readonly CarBrandService _service = service;
+        private readonly ICarBrandService _service = service;
 
         [HttpGet]
         public async Task<ActionResult<List<CarBrand>>> GetCarBrands()

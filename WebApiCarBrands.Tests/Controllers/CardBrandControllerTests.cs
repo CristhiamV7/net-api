@@ -1,42 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
-using WebApiCarBrands.Infrastructure.Data;
+using Moq;
+using WebApiCarBrands.Application.Interfaces;
+using WebApiCarBrands.Controllers;
+using WebApiCarBrands.Domain.Entities;
+using Xunit;
 
-namespace WebApiCarBrands.Tests.Controllers
+public class CarBrandControllerTests : IClassFixture<WebApplicationFactory<Program>>
 {
-    public class CarBrandControllerTests : IClassFixture<WebApplicationFactory<Program>>
+    private readonly Mock<ICarBrandService> _mockService;
+    private readonly CarBrandController _controller;
+
+    public CarBrandControllerTests()
     {
-        private readonly HttpClient _client;
-        private readonly WebApplicationFactory<Program> _factory;
+        _mockService = new Mock<ICarBrandService>();
+        _controller = new CarBrandController(_mockService.Object);
+    }
 
-        public CarBrandControllerTests(WebApplicationFactory<Program> factory)
-        {
-            _factory = factory.WithWebHostBuilder(builder =>
-            {
-                builder.ConfigureServices(services =>
-                {
-                    var descriptor = services.SingleOrDefault(
-                        d => d.ServiceType == typeof(DbContextOptions<CarBrandDbContext>));
+    [Fact]
+    public async Task GetCarBrands_ReturnsOk_WithListOfCarBrands()
+    {
+        var carBrands = new List<CarBrand> { new() { Id = 1, Name = "Toyota" } };
+        _mockService.Setup(s => s.GetCarBrandsAsync()).ReturnsAsync(carBrands);
 
-                    if (descriptor != null)
-                    {
-                        services.Remove(descriptor);
-                    }
+        var result = await _controller.GetCarBrands();
 
-                    services.AddDbContext<CarBrandDbContext>(options =>
-                    {
-                        options.UseInMemoryDatabase("TestDb_" + Guid.NewGuid());
-                    });
-                });
-            });
+        var actionResult = Assert.IsType<OkObjectResult>(result.Result);
+        var returnedBrands = Assert.IsType<List<CarBrand>>(actionResult.Value);
+        Assert.Single(returnedBrands);
+    }
 
-            _client = _factory.CreateClient();
-        }
+    [Fact]
+    public async Task GetCarBrandById_ReturnsNotFound_WhenNotExists()
+    {
+        _mockService.Setup(s => s.GetCarBrandByIdAsync(1)).ReturnsAsync((CarBrand)null);
+
+        var result = await _controller.GetCarBrandById(1);
+
+        Assert.IsType<NotFoundResult>(result.Result);
     }
 }
-
