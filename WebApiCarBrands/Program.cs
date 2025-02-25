@@ -17,18 +17,33 @@ builder.Services.AddDbContext<CarBrandDbContext>(options =>
 
 builder.Services.AddScoped<ICarBrandRepository, CarBrandRepository>();
 builder.Services.AddScoped<ICarBrandService, CarBrandService>();
-builder.Services.AddScoped<CarBrandService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+//builder.Services.AddOpenApi();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "WebApiCarBrands",
+        Version = "v1",
+        Description = "API para gestionar marcas de autom�viles"
+    });
+});
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    //app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApiCarBrands V1");
+        c.RoutePrefix = string.Empty; // Serve Swagger UI at root
+    });
 }
 
 app.UseHttpsRedirection();
